@@ -26,7 +26,8 @@ config :boilerplate, BoilerplateWeb.Endpoint,
   secret_key_base: "wnv3T51V5+cQTHW8B6TSws8S0AgDPQuJmVngadJzbCnI5uoKdYxR89LpiUz2H0nQ",
   watchers: [
     # Start the esbuild watcher by calling Esbuild.install_and_run(:default, args)
-    esbuild: {Esbuild, :install_and_run, [:default, ~w(--sourcemap=inline --watch)]}
+    esbuild: {Esbuild, :install_and_run, [:default, ~w(--sourcemap=inline --watch)]},
+    dart_sass: {DartSass, :install_and_run, [:default, ~w(--watch)]}
   ]
 
 # ## SSL Support
